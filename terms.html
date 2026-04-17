@@ -8,18 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Tái sử dụng CSS nguyên bản của bạn */
-        :root {
-            --bg-light: #FAFAF7;
-            --brand-primary: #2D6A4F;
-            --accent-time: #4A55A2;
-            --accent-house: #8B5E34;
-            --accent-finance: #E9C46A;
-            --text-main: #333333;
-        }
+        :root { --bg-light: #FAFAF7; --brand-primary: #2D6A4F; --accent-time: #4A55A2; --accent-house: #8B5E34; --accent-finance: #E9C46A; --text-main: #333333; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Be Vietnam Pro', sans-serif; background-color: var(--bg-light); color: var(--text-main); line-height: 1.7; padding: 0 20px; }
         .container { max-width: 800px; margin: 60px auto; background-color: var(--bg-light); border: 1px solid var(--brand-primary); padding: 40px; border-radius: 0px; }
+        
+        /* CSS cho Logo ở Header */
+        .app-logo { width: 70px; height: 70px; margin-bottom: 15px; }
+        
         header { text-align: center; margin-bottom: 40px; border-bottom: 3px solid var(--accent-house); padding-bottom: 20px; }
         h1 { color: var(--brand-primary); font-size: 2.5rem; margin-bottom: 10px; }
         h2 { color: var(--brand-primary); font-size: 1.5rem; margin-top: 30px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
@@ -36,6 +32,7 @@
 <body>
     <div class="container">
         <header>
+            <img src="fam_sync_app_icon_installed.svg" alt="FamSync Logo" class="app-logo">
             <h1>Điều Khoản Sử Dụng</h1>
             <p class="date-update">Cập nhật lần cuối: Tháng 4, 2026</p>
         </header>
@@ -43,7 +40,7 @@
             <p>Chào mừng bạn đến với <strong>FamSync</strong>. Bằng việc tải xuống, cài đặt hoặc sử dụng ứng dụng FamSync, bạn đồng ý tuân thủ các Điều khoản sử dụng dưới đây. Vui lòng đọc kỹ trước khi sử dụng.</p>
 
             <h2>1. Tài khoản và Bảo mật</h2>
-            <p>Bạn chịu trách nhiệm bảo mật tài khoản Google được dùng để đăng nhập vào FamSync. Mọi hoạt động phát sinh từ tài khoản của bạn (bao gồm việc mời thành viên khác vào nhóm gia đình) đều thuộc trách nhiệm của bạn.</p>
+            <p>Bạn chịu trách nhiệm bảo mật tài khoản Google được dùng để đăng nhập vào FamSync. Mọi hoạt động phát sinh từ tài khoản của bạn đều thuộc trách nhiệm của bạn.</p>
 
             <h2>2. Gói cước FamSync PRO (Thanh toán & Gia hạn)</h2>
             <p>FamSync cung cấp gói trải nghiệm miễn phí và gói trả phí (FamSync PRO). Khi bạn chọn nâng cấp:</p>
