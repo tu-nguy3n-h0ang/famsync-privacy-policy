@@ -8,122 +8,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* CSS tuân thủ Flat Design và Indochine Calm 60-30-10 */
-        :root {
-            --bg-light: #FAFAF7; /* 60% - Nền chính */
-            --brand-primary: #2D6A4F; /* 30% - Tiêu đề, nhấn mạnh */
-            --accent-time: #4A55A2; /* 10% - Link */
-            --accent-house: #8B5E34; /* 10% - Đường viền, Divider */
-            --accent-finance: #E9C46A; /* 10% - Highlight */
-            --text-main: #333333;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Be Vietnam Pro', sans-serif;
-            background-color: var(--bg-light);
-            color: var(--text-main);
-            line-height: 1.7;
-            padding: 0 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 60px auto;
-            background-color: var(--bg-light);
-            /* Bỏ shadow/gradient theo yêu cầu thiết kế phẳng */
-            border: 1px solid var(--brand-primary);
-            padding: 40px;
-            border-radius: 0px; /* Vuông vức, phẳng */
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            border-bottom: 3px solid var(--accent-house);
-            padding-bottom: 20px;
-        }
-
-        h1 {
-            color: var(--brand-primary);
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            color: var(--brand-primary);
-            font-size: 1.5rem;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        h2::before {
-            content: "■";
-            color: var(--accent-finance);
-            font-size: 1rem;
-        }
-
-        p, ul {
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        a {
-            color: var(--accent-time);
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1px solid var(--accent-time);
-        }
-
-        a:hover {
-            color: var(--brand-primary);
-            border-bottom-color: var(--brand-primary);
-        }
-
-        .highlight {
-            background-color: rgba(233, 196, 106, 0.2); /* Accent Finance nhạt */
-            padding: 2px 6px;
-            font-weight: 500;
-        }
-
-        .date-update {
-            font-size: 0.9rem;
-            color: var(--accent-house);
-            font-style: italic;
-        }
-
-        /* Responsive cho Mobile */
-        @media (max-width: 600px) {
-            .container {
-                margin: 20px auto;
-                padding: 20px;
-                border-left: none;
-                border-right: none;
-            }
-            h1 { font-size: 2rem; }
-        }
+        /* Tái sử dụng CSS cũ của bạn */
+        :root { --bg-light: #FAFAF7; --brand-primary: #2D6A4F; --accent-time: #4A55A2; --accent-house: #8B5E34; --accent-finance: #E9C46A; --text-main: #333333; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Be Vietnam Pro', sans-serif; background-color: var(--bg-light); color: var(--text-main); line-height: 1.7; padding: 0 20px; }
+        .container { max-width: 800px; margin: 60px auto; background-color: var(--bg-light); border: 1px solid var(--brand-primary); padding: 40px; border-radius: 0px; }
+        
+        /* CSS cho Logo ở Header */
+        .app-logo { width: 70px; height: 70px; margin-bottom: 15px; } 
+        
+        header { text-align: center; margin-bottom: 40px; border-bottom: 3px solid var(--accent-house); padding-bottom: 20px; }
+        h1 { color: var(--brand-primary); font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { color: var(--brand-primary); font-size: 1.5rem; margin-top: 30px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+        h2::before { content: "■"; color: var(--accent-finance); font-size: 1rem; }
+        p, ul { margin-bottom: 15px; font-size: 1.05rem; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        a { color: var(--accent-time); text-decoration: none; font-weight: 500; border-bottom: 1px solid var(--accent-time); }
+        a:hover { color: var(--brand-primary); border-bottom-color: var(--brand-primary); }
+        .highlight { background-color: rgba(233, 196, 106, 0.2); padding: 2px 6px; font-weight: 500; }
+        .date-update { font-size: 0.9rem; color: var(--accent-house); font-style: italic; }
+        @media (max-width: 600px) { .container { margin: 20px auto; padding: 20px; border-left: none; border-right: none; } h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
-
     <div class="container">
         <header>
+            <img src="fam_sync_app_icon_installed.svg" alt="FamSync Logo" class="app-logo">
             <h1>Chính Sách Bảo Mật</h1>
             <p class="date-update">Cập nhật lần cuối: Tháng 4, 2026</p>
         </header>
@@ -134,32 +45,32 @@
             <h2>1. Thông tin chúng tôi thu thập</h2>
             <p>Để cung cấp trải nghiệm đồng bộ tốt nhất cho gia đình, chúng tôi thu thập các thông tin sau:</p>
             <ul>
-                <li><strong>Thông tin tài khoản:</strong> Khi bạn đăng nhập bằng Google (Google Auth), chúng tôi thu thập địa chỉ email, tên hiển thị và ảnh đại diện cơ bản để định danh bạn trong nhóm gia đình.</li>
-                <li><strong>Dữ liệu do người dùng tạo:</strong> Các thông tin bạn nhập vào ứng dụng như sự kiện lịch, danh sách công việc nhà, và ghi chép tài chính để đồng bộ tới các thành viên khác trong gia đình.</li>
+                <li><strong>Thông tin tài khoản:</strong> Khi bạn đăng nhập bằng Google, chúng tôi thu thập địa chỉ email, tên hiển thị và ảnh đại diện cơ bản để định danh bạn trong nhóm gia đình.</li>
+                <li><strong>Dữ liệu do người dùng tạo:</strong> Các thông tin bạn nhập vào ứng dụng như sự kiện lịch, danh sách công việc nhà, và ghi chép tài chính để đồng bộ.</li>
             </ul>
 
             <h2>2. Cách chúng tôi sử dụng thông tin</h2>
             <p>Chúng tôi <span class="highlight">tuyệt đối không bán dữ liệu của bạn cho bên thứ ba</span>. Thông tin của bạn chỉ được sử dụng để:</p>
             <ul>
-                <li>Đồng bộ hóa dữ liệu thời gian thực giữa các thiết bị của các thành viên trong cùng một gia đình.</li>
+                <li>Đồng bộ hóa dữ liệu thời gian thực giữa các thiết bị của các thành viên.</li>
                 <li>Cung cấp tính năng trợ lý AI (nếu bạn sử dụng phiên bản Premium).</li>
                 <li>Quản lý trạng thái đăng ký mua hàng qua RevenueCat.</li>
             </ul>
 
             <h2>3. Quyền riêng tư của Trẻ em (COPPA)</h2>
-            <p>FamSync được thiết kế như một công cụ tiện ích dành cho người lớn và phụ huynh quản lý gia đình. Ứng dụng này <strong>không nhắm mục tiêu đến trẻ em dưới 13 tuổi</strong>. Chúng tôi không cố ý thu thập thông tin cá nhân của trẻ em dưới 13 tuổi. Nếu bạn là phụ huynh và phát hiện con mình đã cung cấp dữ liệu, vui lòng liên hệ với chúng tôi để xóa bỏ.</p>
+            <p>FamSync được thiết kế như một công cụ tiện ích dành cho người lớn và phụ huynh. Ứng dụng này <strong>không nhắm mục tiêu đến trẻ em dưới 13 tuổi</strong>.</p>
 
             <h2>4. Lưu trữ và Bảo mật dữ liệu</h2>
-            <p>Dữ liệu của bạn được lưu trữ an toàn trên các máy chủ đám mây với tiêu chuẩn bảo mật cao. Các khoản thu chi cá nhân hoặc dữ liệu riêng tư chỉ được hiển thị với những thành viên mà bạn cấp quyền.</p>
+            <p>Dữ liệu của bạn được lưu trữ an toàn trên các máy chủ đám mây với tiêu chuẩn bảo mật cao.</p>
 
             <h2>5. Quyền của người dùng</h2>
-            <p>Bạn có toàn quyền yêu cầu trích xuất hoặc <strong>xóa vĩnh viễn</strong> toàn bộ dữ liệu tài khoản và gia đình của mình bất cứ lúc nào thông qua chức năng "Xóa tài khoản" ngay bên trong ứng dụng.</p>
+            <p>Bạn có toàn quyền yêu cầu trích xuất hoặc <strong>xóa vĩnh viễn</strong> toàn bộ dữ liệu tài khoản bất cứ lúc nào thông qua chức năng "Xóa tài khoản".</p>
 
             <h2>6. Liên hệ với chúng tôi</h2>
-            <p>Nếu bạn có bất kỳ câu hỏi nào về Chính sách bảo mật này, vui lòng liên hệ với đội ngũ phát triển qua email:</p>
             <p>Email: <a href="mailto:zenithtechsolutions.care@outlook.com">zenithtechsolutions.care@outlook.com</a></p>
+            
+            <p style="margin-top: 40px; text-align: center;"><a href="index.html">← Trở về Trang chủ</a></p>
         </main>
     </div>
-
 </body>
 </html>
